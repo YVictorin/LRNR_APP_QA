@@ -33,6 +33,7 @@ export default function Home() {
       <div className="container main">
         <div className="container center-align">
           <img
+            data-test="hero-img"
             src={logo}
             alt=""
             style={{ width: "min(32rem, 80%)", height: "min(12em, 20vh)" }}
@@ -51,6 +52,7 @@ export default function Home() {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Link
               to="/quiz-gen"
+              data-test="submit-btn"
               className="waves-effect waves-light btn btn-large"
               style={{ marginBottom: "18%" }}
             >

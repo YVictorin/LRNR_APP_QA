@@ -22,7 +22,7 @@ export default [
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-    },
+    }, 
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
@@ -34,5 +34,12 @@ export default [
         { allowConstantExport: true },
       ],
     },
-  },
+    
+  }, {
+    "env": {
+      "cypress/globals": true
+    },
+    "plugins": ["cypress"],
+    "extends": ["plugin:cypress/recommended"]
+  },  
 ];

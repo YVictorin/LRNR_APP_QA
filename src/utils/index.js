@@ -14,26 +14,22 @@ export class User {
     this.lastName = lastName;
     this.username = username;
     this.password = password;
+    this.questions = [];
+    this.answers = [];
     this.level = 0;
+    this.xp = 0;
+    this.lifetimeXP = 0;
     this.streak = 0;
     this.badges = [];
-      this.id = crypto.randomUUID();
-      this.name = name;
-      this.lastName = lastName;
-      this.username = username;
-      this.password = password;
-      this.questions = [];
-      this.answers = [];
-      this.level = 0;
-      this.xp = 0;
-      this.mathXp = 0;
-      this.scienceXp = 0;
-      this.historyXp = 0;
-      this.customXp = 0;
-      this.lifetimeXP = 0;
-      this.streak = 0;
-      this.badges = [];
-      this.topic = "";
-      this.customTopics = []; // Change from a single value to an array
+    this.topic = "";
+    this.customTopics = []; // Changed from a single value to an array
+
+    this.golangXp = 0;
+    this.awsXp = 0;
+    this.javascriptXp = 0;
+    this.ciCdXp = 0;
+    this.homeGardensXp = 0;
+    this.coffeeXp = 0;
+    this.fingerFoodXp = 0;
   }
 }
